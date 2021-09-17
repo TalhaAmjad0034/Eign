@@ -1,0 +1,19 @@
+.Main {
+  display: flex;
+  padding: 1rem 5%;
+  margin-top: 3rem;
+  gap: 10%;
+}
+@media screen and (max-width: 600px) {
+  .Main {
+    padding: 1rem 3%;
+    margin-top: 3rem;
+    gap: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Main {
+    flex-direction: column;
+    padding: 1rem 5%;
+  }
+}

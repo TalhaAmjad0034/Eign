@@ -1,0 +1,102 @@
+.Footer {
+  background-color: #f2f6ff;
+  padding: 0 10%;
+  padding-top: 5rem;
+  clip-path: polygon(50% 3vw, 55% 0, 100% 0, 100% 100%, 0 100%, 0 0, 45% 0);
+  margin-top: -10rem;
+}
+.footertop {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbe5fb;
+  padding-bottom: 2rem;
+}
+.Logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.Logo {
+  width: 5rem;
+}
+.grey {
+  color: var(--color-grey-2);
+  font-size: clamp(0.4rem, 0.9rem, 1.2vw);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.grey:hover {
+  color: black;
+}
+.actuallinks {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.actuallinks ul {
+  list-style-type: none;
+}
+.headings {
+  font-weight: 600;
+}
+.linkss {
+  margin-top: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.linkss:hover {
+  border-bottom: 1px solid grey;
+}
+.socail-icons img {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.last-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  color: var(--color-grey-2);
+}
+.last-flex div span {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .footertop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .Logo {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+  .actuallinks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .headings {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .last-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 345px) {
+  .last-flex div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last-flex div span {
+    margin-top: 1rem;
+  }
+}

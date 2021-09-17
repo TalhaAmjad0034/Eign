@@ -1,0 +1,212 @@
+.Overview {
+  flex: 1;
+}
+.pricing {
+  background-color: #fafbff;
+  border-radius: 5px;
+  border: 1px solid #cdd6e9;
+  padding: 5%;
+  color: var(--color-grey);
+}
+.pricing-top {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.pricing-top h1 {
+  color: var(--color-grey);
+}
+.pricing-top span {
+  white-space: nowrap;
+}
+.pricing-top span:first-of-type {
+  background-color: blue;
+  border-radius: 2px;
+  padding: 5px 9px;
+  color: white;
+  font-size: clamp(0.3rem, 0.9rem, 1.1vw);
+}
+.pricing-top span:last-child {
+  color: var(--color-grey-2);
+  font-size: clamp(0.3rem, 0.9rem, 1.1vw);
+}
+.qualified {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.blueone {
+  background-color: blue;
+  color: white;
+  font-weight: 300;
+  font-size: clamp(0.5rem, 1.3rem, 1.5vw);
+  padding: 0.5rem 0.7rem;
+}
+.quali-price span:nth-child(1) {
+  color: var(--color-grey);
+}
+.quali-price span:nth-child(2) {
+  color: var(--color-grey-2);
+}
+.quali-price {
+  display: flex;
+  flex-direction: column;
+}
+.aqua-btn,
+.blue-btn {
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.aqua-btn {
+  background-color: var(--color-aqua);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.blue-btn {
+  background-color: var(--color-blue);
+}
+.blue-btn:hover {
+  background-color: rgb(27, 27, 216);
+}
+.aqua-btn:hover {
+  background-color: #29a37e;
+}
+.monthly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.graph {
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.graph.active {
+  text-align: center;
+  max-height: 60rem;
+}
+.maps {
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.maps.active {
+  text-align: center;
+  max-height: 60rem;
+}
+.surroundingcontent {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.surroundingcontent.active {
+  max-height: 60rem;
+}
+.img img {
+  width: 100%;
+  object-fit: contain;
+}
+.img {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 50%;
+  margin-right: 80%;
+  margin-left: 20%;
+}
+.colors {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 0.7rem;
+}
+.inverter {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.inverter.active {
+  transform: rotate(0deg);
+}
+.forcolor::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  display: inline-block;
+  color: white;
+}
+.blue::before {
+  background-color: var(--color-blue);
+}
+.aqua::before {
+  background-color: var(--color-aqua);
+}
+.light::before {
+  background-color: var(--color-light-khaki);
+}
+.darkone::before {
+  background-color: var(--color-dark-khaki);
+}
+.lightblue::before {
+  background-color: var(--color-extra-lightblue);
+}
+.adress-1 {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 1rem;
+}
+.map-content {
+  margin-top: 2rem;
+}
+.imege img {
+  width: 100%;
+  object-fit: cover;
+}
+.actual-adress,
+.street {
+  color: var(--color-grey-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adrs {
+  color: var(--color-grey);
+  font-weight: 600;
+  font-size: clamp(0.6rem, 1.3rem, 1.6vw);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.box {
+  margin-top: 2rem;
+  background: #f3f7ff;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #9cb0d9;
+}
+.box p {
+  color: var(--color-blue);
+  font-weight: 400;
+}
+.box h2 {
+  font-size: clamp(0.5rem, 1.2rem, 1.5vw);
+  color: #272c37;
+}
+@media screen and (max-width: 600px) {
+  .Overview {
+  }
+}
